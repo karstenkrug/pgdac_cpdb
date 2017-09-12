@@ -1,0 +1,40 @@
+######################################## 
+## 2017-09-01 16:06:11 --'run_cpdb'--
+
+## parameters
+mutation file: /root/pgdac_cpdb_workflow/99342be1-7d32-4cc5-98f2-d32616c64881/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/MB102_pair.pass.vcf 
+junction file: /root/pgdac_cpdb_workflow/99342be1-7d32-4cc5-98f2-d32616c64881/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/MB102.SJ.out.bed 
+fusion file: 
+annotation file: /root/pgdac_cpdb_workflow/99342be1-7d32-4cc5-98f2-d32616c64881/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/20160914_hg19.zip 
+temp-dir: /tmp/ 
+log file: cpdb_String.log 
+
+## Extracting annotation files to /tmp/kxpyo3729215832 
+
+## Importing annotation files
+
+## Junction pipeline
+Importing splice junctions
+Annotating splice junctions
+Exporting junction fasta
+
+## VCF pipeline
+Importing VCF
+Extracting indels... 457 indels found
+Extracting SNVs...2380 SNVs found
+
+## parsing SNVs
+predicting SNV locations
+Extracting SNVs in coding regions
+Removing DNVs
+Extracting protein coding sequences affected by SNVs
+Predicting nsSNVs
+Exporting nsSNVs fasta
+
+## parsing indels
+Extracting indels in coding regions
+Predicting indel locations
+Exporting indel fasta
+done
+
+Total time: 3.737422 mins

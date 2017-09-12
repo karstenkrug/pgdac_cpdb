@@ -1,0 +1,50 @@
+[2017-09-04 11:19:13,20] [info] Slf4jLogger started
+[2017-09-04 11:19:13,52] [info] RUN sub-command
+[2017-09-04 11:19:13,52] [info]   WDL file: /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/pgdac_cpdb.wdl
+[2017-09-04 11:19:13,52] [info]   Inputs: /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/inputs.json
+[2017-09-04 11:19:13,60] [info] SingleWorkflowRunnerActor: Submitting workflow
+[2017-09-04 11:19:15,29] [info] Running with database db.url = jdbc:hsqldb:mem:c663fc38-588b-4c92-80fb-34d77a4aff39;shutdown=false;hsqldb.tx=mvcc
+[2017-09-04 11:19:24,73] [info] Metadata summary refreshing every 2 seconds.
+[2017-09-04 11:19:25,12] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4[0m
+[2017-09-04 11:19:25,12] [info] Workflow 5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4 submitted.
+[2017-09-04 11:19:25,37] [info] 1 new workflows fetched
+[2017-09-04 11:19:25,37] [info] WorkflowManagerActor Starting workflow [38;5;2m5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4[0m
+[2017-09-04 11:19:25,38] [info] WorkflowManagerActor Successfully started WorkflowActor-5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4
+[2017-09-04 11:19:25,38] [info] Retrieved 1 workflows from the WorkflowStoreActor
+[2017-09-04 11:19:25,75] [info] MaterializeWorkflowDescriptorActor [[38;5;2m5922d87c[0m]: Call-to-Backend assignments: pgdac_cpdb_workflow.pgdac_cpdb -> Local
+[2017-09-04 11:19:25,97] [[38;5;220mwarn[0m] Local [[38;5;2m5922d87c[0m]: Key/s [memory, disks] is/are not supported by backend. Unsupported attributes will not be part of jobs executions.
+[2017-09-04 11:19:26,09] [info] WorkflowExecutionActor-5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4 [[38;5;2m5922d87c[0m]: Starting calls: pgdac_cpdb_workflow.pgdac_cpdb:NA:1
+[2017-09-04 11:19:26,19] [[38;5;220mwarn[0m] SharedFileSystemAsyncJobExecutionActor [[38;5;2m5922d87c[0mpgdac_cpdb_workflow.pgdac_cpdb:NA:1]: Unrecognized runtime attribute keys: disks, memory
+[2017-09-04 11:19:26,25] [info] SharedFileSystemAsyncJobExecutionActor [[38;5;2m5922d87c[0mpgdac_cpdb_workflow.pgdac_cpdb:NA:1]: [38;5;5mset -euo pipefail
+#Command goes here
+Rscript /src/customProDB.r /root/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/MB88_pair.pass.vcf /root/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/MB88.SJ.out.bed MB88 /root/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/20160914_hg19.zip[0m
+[2017-09-04 11:19:26,26] [info] SharedFileSystemAsyncJobExecutionActor [[38;5;2m5922d87c[0mpgdac_cpdb_workflow.pgdac_cpdb:NA:1]: executing: docker run --rm -v /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb:/root/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb -i broadcptac/pgdac_cpdb:2 /bin/bash < /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb/execution/script
+[2017-09-04 11:19:26,26] [info] SharedFileSystemAsyncJobExecutionActor [[38;5;2m5922d87c[0mpgdac_cpdb_workflow.pgdac_cpdb:NA:1]: command: "/bin/bash" "/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb/execution/script.submit"
+[2017-09-04 11:19:26,29] [info] SharedFileSystemAsyncJobExecutionActor [[38;5;2m5922d87c[0mpgdac_cpdb_workflow.pgdac_cpdb:NA:1]: job id: 2908
+[2017-09-05 01:55:24,85] [[38;5;1merror[0m] WorkflowManagerActor Workflow 5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4 failed (during ExecutingWorkflowState): java.lang.Exception: Call pgdac_cpdb_workflow.pgdac_cpdb: return code was 137
+[2017-09-05 01:55:24,95] [info] WorkflowManagerActor WorkflowActor-5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4 is in a terminal state: WorkflowFailedState
+[2017-09-05 01:55:29,39] [info] SingleWorkflowRunnerActor workflow finished with status 'Failed'.
+[2017-09-05 01:55:29,48] [[38;5;1merror[0m] Workflow 5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4 transitioned to state Failed
+java.lang.RuntimeException: Workflow 5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4 transitioned to state Failed
+	at cromwell.engine.workflow.SingleWorkflowRunnerActor$RunnerData.addFailure(SingleWorkflowRunnerActor.scala:51)
+	at cromwell.engine.workflow.SingleWorkflowRunnerActor$$anonfun$2.applyOrElse(SingleWorkflowRunnerActor.scala:128)
+	at cromwell.engine.workflow.SingleWorkflowRunnerActor$$anonfun$2.applyOrElse(SingleWorkflowRunnerActor.scala:106)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at akka.actor.FSM$class.processEvent(FSM.scala:663)
+	at cromwell.engine.workflow.SingleWorkflowRunnerActor.akka$actor$LoggingFSM$$super$processEvent(SingleWorkflowRunnerActor.scala:68)
+	at akka.actor.LoggingFSM$class.processEvent(FSM.scala:799)
+	at cromwell.engine.workflow.SingleWorkflowRunnerActor.processEvent(SingleWorkflowRunnerActor.scala:68)
+	at akka.actor.FSM$class.akka$actor$FSM$$processMsg(FSM.scala:657)
+	at akka.actor.FSM$$anonfun$receive$1.applyOrElse(FSM.scala:651)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:484)
+	at cromwell.server.CromwellRootActor.aroundReceive(CromwellRootActor.scala:26)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:526)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:495)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Workflow 5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4 transitioned to state Failed

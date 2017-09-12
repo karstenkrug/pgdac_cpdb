@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --rm -v /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb:/root/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb -i broadcptac/pgdac_cpdb:1 /bin/bash < /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb/execution/script

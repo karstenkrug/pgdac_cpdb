@@ -1,0 +1,9 @@
+#!/bin/bash
+'/bin/bash' '/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/99342be1-7d32-4cc5-98f2-d32616c64881/call-pgdac_cpdb/execution/script.submit' \
+  > /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/99342be1-7d32-4cc5-98f2-d32616c64881/call-pgdac_cpdb/execution/stdout \
+  2> /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/99342be1-7d32-4cc5-98f2-d32616c64881/call-pgdac_cpdb/execution/stderr \
+  < /dev/null \
+  || echo -1 \
+  > /home/karsten/gdac-firecloud/tasks/pgdac_cpdb/cromwell-executions/pgdac_cpdb_workflow/99342be1-7d32-4cc5-98f2-d32616c64881/call-pgdac_cpdb/execution/rc \
+  &
+echo $!

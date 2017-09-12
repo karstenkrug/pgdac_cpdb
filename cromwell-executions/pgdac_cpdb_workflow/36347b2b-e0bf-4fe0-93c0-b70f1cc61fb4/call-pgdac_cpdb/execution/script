@@ -1,0 +1,9 @@
+#!/bin/sh
+(
+ cd /root/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb/execution
+ set -euo pipefail
+#Command goes here
+Rscript /home/pgdac/customProDB.r /root/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/MB102_pair.pass.vcf /root/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/MB102.SJ.out.bed String /root/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/20160914_hg19.zip
+)
+echo $? > /root/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb/execution/rc.tmp
+mv /root/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb/execution/rc.tmp /root/pgdac_cpdb_workflow/36347b2b-e0bf-4fe0-93c0-b70f1cc61fb4/call-pgdac_cpdb/execution/rc

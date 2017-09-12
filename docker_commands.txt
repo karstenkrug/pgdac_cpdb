@@ -1,0 +1,17 @@
+
+## build docker
+sudo docker build --rm -t broadcptac/pgdac_cpdb:2 .
+
+## test container
+sudo make validate
+sudo make inputs
+sudo make run
+
+## push to Dockerhub
+sudo docker login -u kkrug
+sudo docker push broadcptac/pgdac_cpdb:2
+
+
+## upload to firecloud
+sudo docker run --rm -it -v "$HOME"/.config:/.config -v "$PWD":/working broadinstitute/firecloud-cli bash
+firecloud -u https://api.firecloud.org/api -m push -s broadcptac -t Task -y "PGDAC customProDB pipeline" pgdac_cpdb.wdl

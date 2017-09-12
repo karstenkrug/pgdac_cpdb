@@ -1,0 +1,16 @@
+#!/bin/bash
+## uploads all files with a pattern $PATTERN in the current directory to
+## Google bucket $GSBUCK
+
+PATTERN=\\.vcf$
+GSBUCK=gs://fc-c00276af-4f9c-4e79-9fd5-66df1976685a/MedBlast/VCF/;
+
+FILES=($(ls | grep $PATTERN))
+
+
+for i in "${FILES[@]}"
+do
+	:
+	echo $i
+	gsutil -m cp $i $GSBUCK
+done

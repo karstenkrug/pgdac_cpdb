@@ -1,0 +1,19 @@
+######################################## 
+## 2017-09-04 15:19:46 --'run_cpdb'--
+
+## parameters
+mutation file: /root/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/MB88_pair.pass.vcf 
+junction file: /root/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/MB88.SJ.out.bed 
+fusion file: 
+annotation file: /root/pgdac_cpdb_workflow/5922d87c-6ef2-4e0e-b3b1-f32a50e64ff4/call-pgdac_cpdb/inputs/home/karsten/gdac-firecloud/tasks/pgdac_cpdb/tests/20160914_hg19.zip 
+temp-dir: /tmp/ 
+log file: cpdb_MB88.log 
+
+## Extracting annotation files to /tmp/lmubc7349565733 
+
+## Importing annotation files
+
+## Junction pipeline
+Importing splice junctions
+Annotating splice junctions
+Exporting junction fasta

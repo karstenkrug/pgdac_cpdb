@@ -1,0 +1,8 @@
+{
+  "pgdac_cpdb_workflow.pgdac_cpdb.junc_bed": "tests/MB88.SJ.out.bed",
+  "pgdac_cpdb_workflow.pgdac_cpdb.disk_space": "10",
+  "pgdac_cpdb_workflow.pgdac_cpdb.annotation_zip": "tests/20160914_hg19.zip",
+  "pgdac_cpdb_workflow.pgdac_cpdb.id": "MB88",
+  "pgdac_cpdb_workflow.pgdac_cpdb.memory": "1",
+  "pgdac_cpdb_workflow.pgdac_cpdb.mut_vcf": "tests/MB88_pair.pass.vcf"
+}
